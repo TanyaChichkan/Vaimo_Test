@@ -1,0 +1,125 @@
+@import url(d:\Projects\React\Vaimo_Test\node_modules\modern-normalize\modern-normalize.css);
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    width: 328px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1237px;
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: cadetblue;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-icon {
+  width: 20px;
+  height: 15px;
+}
+
+.header-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 53px;
+}
+
+.header-icon-list-item:last-child {
+  display: none;
+}
+
+.icon-basket-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 46px;
+  height: 24px;
+  background-color: #4A4A4A;
+}
+
+.icon-burger {
+  width: 20px;
+  height: 15px;
+}
+
+.icon-search {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-basket {
+  width: 16px;
+  height: 24px;
+}
+/*# sourceMappingURL=main.css.map */

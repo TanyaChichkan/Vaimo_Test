@@ -1,0 +1,56 @@
+.header{
+    padding-top: 20px;
+    padding-bottom:30px;
+    background-color: cadetblue;
+
+    &-wrapper{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    &-icon{
+        width:20px;
+        height:15px;
+       
+    }
+
+    &-icon-list{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style:none;
+        width: 53px;
+
+        &-item:last-child{
+            display: none;
+        }
+    }
+
+}
+
+.icon{
+
+    &-basket-wrapper{
+        display:flex;
+        justify-content: flex-end;
+        width:46px;
+        height: 24px;
+        background-color: $secondary-back-color-dark;
+    }
+
+    &-burger{
+        width:20px;
+        height: 15px;
+    }
+
+    &-search{
+        width:18px;
+        height: 18px;
+    }
+
+    &-basket{
+        width:16px;
+        height: 24px;
+        
+    }
+}

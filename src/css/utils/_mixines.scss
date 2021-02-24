@@ -1,0 +1,19 @@
+@mixin phone {
+    @media screen and (min-width: 340px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: 1440px) {
+      @content;
+    }
+}
+
+@mixin font($fs, $fw, $lh, $fc, $ls) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    font-color: $fc;
+    letter-spacing: $ls;
+}
