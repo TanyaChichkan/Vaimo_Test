@@ -1,4 +1,4 @@
-@mixin phone {
+@mixin mobile {
     @media screen and (min-width: 340px) {
       @content;
     }

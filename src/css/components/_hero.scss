@@ -3,6 +3,32 @@
     background-image: url('./images/backgr-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include desktop(){
+       height: 756px;
+       background-image: url('./images/backgr-deskt.png');
+       display: flex;
+
+       align-items: center;
+       justify-content: center;
+
+    }
+}
+
+.page-title{
+    display:none;
+
+    @include desktop(){
+        display: block;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 90px;
+
+    text-align: center;
+    color: #FFFFFF;
+    }
 }
 
    
@@ -11,4 +37,6 @@
    height:24px;
    background-image: none;
    background-color: $secondary-back-color-dark;
+
+   
 }

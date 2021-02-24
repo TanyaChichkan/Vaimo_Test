@@ -1,3 +1,5 @@
+@import '../utils/_mixines';
+
 .header{
     position: absolute;
     top: 0;
@@ -7,9 +9,18 @@
     padding-bottom:30px;
     background-color: transparent;
 
+    @include desktop(){
+        top: 25px;
+        padding-top:24px;
+        background: linear-gradient(180deg, rgba(51, 51, 51, 0.9) 14.31%, rgba(27, 27, 27, 0.469176) 58.6%, rgba(0, 0, 0, 0.0001) 100%);
+        mix-blend-mode: normal;
+        opacity: 0.24;
+    }
+
     &-wrapper{
         display:flex;
         justify-content: space-between;
+        align-items: center;
     }
     
     &-icon{
@@ -28,6 +39,38 @@
         &-item:last-child{
             display: none;
         }
+
+        @include desktop(){
+            display:none;
+        }
+    }
+
+    &-delivery{
+        display: none;
+
+        &-text{
+            margin: 0 auto;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+
+            text-align: center;
+            letter-spacing: 0.8px;
+
+            color: #000000;
+        }
+
+        @include desktop(){
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            height:24px;
+        }
+
+
     }
 
     // &:active{
@@ -53,6 +96,30 @@
         border:none;
     }
 
+    &-input{
+
+        width: 584px;
+        height:48px;
+        padding-left:16px;
+        padding-right: 16px;
+
+        background: #F7F7F7;
+        mix-blend-mode: normal;
+        opacity: 0.24;
+        border-radius: 3px;
+
+        &-wrapper {
+            display:none;
+
+            @include desktop(){
+            display:block;
+            position: relative;
+            }
+
+        }
+
+    }
+
 }
 
 .icon{
@@ -75,6 +142,13 @@
         width:18px;
         height: 18px;
 
+        @include desktop(){
+            position:absolute;
+            top:0;
+            right: 0;
+            transform: translate(-20px, 16px);
+        }
+
     }
 
     &-basket{
@@ -91,6 +165,86 @@
             display: block;
             width:16px;
             height: 16px;
+        }
+    }
+
+    &-location{
+        width:8px;
+        height: 11px;
+    }
+}
+
+.logo{
+    &-mobile{
+
+        @include desktop(){
+            display: none;
+        }
+    }
+
+    &-desktop{
+        display: none;
+       
+        @include desktop(){
+            display:block;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 57px;
+    
+            letter-spacing: 0.95px;
+            color: white;
+        }
+    }
+}
+
+.registr{
+    &-wrapper{
+    display:none;
+
+        @include desktop(){
+            display: flex;
+            width:148px;
+            justify-content: space-between;
+        }
+    }
+
+    &-button-wrapper{
+        display: flex;
+    }
+
+    &-button{
+        background-color:transparent;
+        outline:none;
+        border:none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height */
+
+        text-align: right;
+        letter-spacing: 1px;
+
+        color: #FFFFFF;
+
+        &:first-child{
+            margin-right:20px;
+            position: relative;
+         
+
+            &::after{
+                content: "";
+                width: 1px;
+                height: 16px;
+                position: absolute;
+                right: -11px;
+                background-color: white;
+                
+                
+            }
         }
     }
 }

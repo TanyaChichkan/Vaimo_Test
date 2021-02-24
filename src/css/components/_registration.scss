@@ -12,6 +12,20 @@
         font-size: 11px;
         line-height: 18px;
         letter-spacing: 0.87px;
+
+        @include desktop(){
+            width:439px;
+            margin: 0 auto;
+            margin-bottom:14px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.872727px;
+
+            color: #000000;
+        }
         
     }
 
@@ -24,6 +38,11 @@
         display: flex;
         width:100%;
         justify-content: space-between;
+
+        @include desktop(){
+            width: 439px;
+            margin: 0 auto;
+        }
     }
 
     &-input{
@@ -35,6 +54,10 @@
         padding-top: 8px;
         padding-bottom: 7px;
         margin-right: 8px;
+
+        @include desktop(){
+            width: 334px;
+        }
 
         &::placeholder{
             font-family: Poppins;
@@ -62,6 +85,11 @@
         line-height: 20px;
         text-align: center;
         letter-spacing: 1px;
+
+        @include desktop(){
+            width: 94px;
+        }
+
     }
 
     

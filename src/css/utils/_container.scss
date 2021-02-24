@@ -4,11 +4,11 @@
     padding-right: 15px;
     width: 100%;
   
-    @media screen and(min-width: $phone) {
-      width: $phone;
+    @media screen and(min-width: $mobile) {
+      width: $mobile;
     }
 
     @media screen and(min-width: $desktop) {
-      width: 1237px;
+      width: $desktop;
     }
 }

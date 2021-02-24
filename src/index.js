@@ -22,38 +22,22 @@ function handler(){
 }
 
 
+const footerList = document.querySelector('.footer-list');
 const footerItems = Array.from(document.querySelectorAll('.footer-list-item'));
 const footerIconRight = Array.from(document.querySelectorAll('.icon-right'));
+const categoriesList = Array.from(
+  document.querySelectorAll('.categories-list'),
+);
 
+footerList.addEventListener('click', handlerFooter);
 
-
-footerItems.forEach(item=>{
-    item.addEventListener("click",handlerFooter);
-});
-
-function handlerFooter(e){
-   
-    footerIconRight.forEach((icon,index)=>{
-        if(index==e.target.dataset.index){
-            icon.classList.toggle('is-open');
-            listMarkUpRender()
-        }
-        // e.target.insertAdjacentHTML('beforeend', listMarkUpRender());
-    })
-
-}
-
-function listMarkUpRender(){
-    footerIconRight.map(item => {
-        return item.innerHTML = `<ul>${categoryRender(categories)}</ul>`;
-    })
-}
-
-
-
-
-function categoryRender(array){
-    array.map(item=>`<li>${item}</li>`)
+function handlerFooter(e) {
+  footerItems.forEach((item, index) => {
+    if (Number(e.target.dataset.index) === index) {
+      footerIconRight[index].classList.toggle('is-open');
+      categoriesList[index].classList.toggle('categories-list');
+    }
+  });
 }
 
 
