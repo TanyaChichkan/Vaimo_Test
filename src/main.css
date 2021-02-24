@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 360px) {
   .container {
-    width: 328px;
+    width: 360px;
   }
 }
 
@@ -59,9 +59,13 @@ p, h1, h2, h3 {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: cadetblue;
+  background-color: transparent;
 }
 
 .header-wrapper {
@@ -96,6 +100,19 @@ p, h1, h2, h3 {
   display: none;
 }
 
+.header.active {
+  position: static;
+}
+
+.header.isFormOpen {
+  background-color: white;
+}
+
+.header-search-button {
+  background-color: transparent;
+  border: none;
+}
+
 .icon-basket-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,5 +138,221 @@ p, h1, h2, h3 {
 .icon-basket {
   width: 16px;
   height: 24px;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.icon-cross.active {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.section-hero {
+  height: 480px;
+  background-image: url("./images/backgr-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-hero.active {
+  height: 24px;
+  background-image: none;
+  background-color: #4A4A4A;
+}
+
+.section-registration {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.section-text {
+  margin-bottom: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: 0.87px;
+}
+
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration-input {
+  width: 224px;
+  border: 1px solid #E1E0E1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 11px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  margin-right: 8px;
+}
+
+.registration-input::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+.registration-input:-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+.registration-input::-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+.registration-input::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+}
+
+.registration-button {
+  width: 96px;
+  height: 35px;
+  background: #000000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 23px;
+  background: #F7F7F7;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-list {
+  margin-bottom: 24px;
+}
+
+.footer-list-item {
+  width: 328px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #E1E0E1;
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.16364px;
+}
+
+.footer-socials {
+  width: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.icon-instagram {
+  width: 19px;
+  height: 19px;
+}
+
+.icon-twitter {
+  width: 20px;
+  height: 16px;
+}
+
+.icon-snapchat {
+  width: 19px;
+  height: 18px;
+}
+
+.icon-facebook {
+  width: 10px;
+  height: 18px;
+}
+
+.icon-youtube {
+  width: 21px;
+  height: 15px;
+}
+
+.icon-right {
+  width: 12px;
+  height: 7px;
+  pointer-events: none;
+}
+
+.icon-right.is-open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=main.css.map */

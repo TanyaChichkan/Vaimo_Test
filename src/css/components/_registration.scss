@@ -1,0 +1,68 @@
+.section {
+    &-registration{
+        padding-top:24px;
+        padding-bottom:24px;
+    }
+
+    &-text{
+        margin-bottom:14px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.87px;
+        
+    }
+
+
+}
+
+.registration{
+
+    &-form{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+    }
+
+    &-input{
+        width: 224px;
+        border: 1px solid #E1E0E1;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding-left:11px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        margin-right: 8px;
+
+        &::placeholder{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 16px;
+
+            letter-spacing: 0.8px;
+        }
+    }
+
+    &-button{
+        width: 96px;
+        height:35px;
+        background: #000000;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color:white;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    
+}

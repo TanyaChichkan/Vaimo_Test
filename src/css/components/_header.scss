@@ -1,7 +1,11 @@
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding-top: 20px;
     padding-bottom:30px;
-    background-color: cadetblue;
+    background-color: transparent;
 
     &-wrapper{
         display:flex;
@@ -26,6 +30,29 @@
         }
     }
 
+    // &:active{
+    //     position:static;
+    //     background-image: url('./images/backgr-mob-active.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+
+    &.active{
+        position:static;
+        // background-image: url('./images/backgr-mob-active.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+    }
+
+    &.isFormOpen{
+        background-color:white;
+    }
+
+    &-search-button{
+        background-color:transparent;
+        border:none;
+    }
+
 }
 
 .icon{
@@ -41,16 +68,29 @@
     &-burger{
         width:20px;
         height: 15px;
+
     }
 
     &-search{
         width:18px;
         height: 18px;
+
     }
 
     &-basket{
         width:16px;
         height: 24px;
         
+    }
+
+    &-cross{
+        display: none;
+       
+
+        &.active{
+            display: block;
+            width:16px;
+            height: 16px;
+        }
     }
 }

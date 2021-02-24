@@ -1,0 +1,14 @@
+.section-hero{
+    height: 480px;
+    background-image: url('./images/backgr-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+   
+ 
+.section-hero.active{
+   height:24px;
+   background-image: none;
+   background-color: $secondary-back-color-dark;
+}

@@ -5,7 +5,7 @@
     width: 100%;
   
     @media screen and(min-width: $phone) {
-      width: 328px;
+      width: $phone;
     }
 
     @media screen and(min-width: $desktop) {

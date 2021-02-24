@@ -9,6 +9,7 @@
           rel="stylesheet"> 
 
     <body>
+
       <header class="header">
         <div class="container">
           <div class="header-wrapper">
@@ -21,9 +22,15 @@
               </li>
 
               <li class="icon-list-item">
-                <svg class="icon-search">
-                  <use href="./images/symbol-defs.svg#icon-search"></use>
-                </svg>
+                <button type="button" class="header-search-button">
+                  <svg class="icon-search">
+                    <use href="./images/symbol-defs.svg#icon-search"></use>
+                  </svg>
+  
+                  <svg class="icon-cross">
+                    <use href="./images/symbol-defs.svg#icon-cross"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
 
@@ -46,7 +53,101 @@
             </ul>
 
           </div>
+
         </div>
       </header>
+
+      <main>
+        <!-- hero section -->
+
+        <section class="section-hero">
+        </section>
+
+        <section class="section-registration">
+          <div class="container">
+            <p class="section-text">
+              New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.
+            </p>
+
+            <form class = "registration-form">
+              <input type="text" 
+                placeholder="Your email address" 
+                class="registration-input"
+              />
+              <button type="submit" class="registration-button">Register</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-info">
+
+            <ul class="footer-list">
+              <li class="footer-list-item" data-index="0">
+                About us
+                <svg class="icon-right">
+                  <use href="./images/symbol-defs.svg#icon-right" ></use>
+                </svg>
+              </li>
+              <li class="footer-list-item" data-index="1">
+                Categories
+                <svg class="icon-right">
+                  <use href="./images/symbol-defs.svg#icon-right" ></use>
+                </svg>
+              </li>
+              <li class="footer-list-item" data-index="2">
+                Help
+                <svg class="icon-right">
+                  <use href="./images/symbol-defs.svg#icon-right" ></use>
+                </svg>
+              </li>
+              <li class="footer-list-item" data-index="3">
+                Payments & Delivery
+                <svg class="icon-right">
+                  <use href="./images/symbol-defs.svg#icon-right"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <ul class="footer-socials">
+              <li class="footer-socials-item">
+                <svg class="icon-instagram">
+                  <use href="./images/symbol-defs.svg#icon-insta"></use>
+                </svg>
+              </li>
+
+              <li class="footer-socials-item">
+                <svg class="icon-twitter">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </li>
+
+              <li class="footer-socials-item">
+                <svg class="icon-snapchat">
+                  <use href="./images/symbol-defs.svg#icon-snapchat"></use>
+                </svg>
+              </li>
+
+              <li class="footer-socials-item">
+                <svg class="icon-facebook">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </li>
+
+              <li class="footer-socials-item">
+                <svg class="icon-youtube">
+                  <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </li>
+
+            </ul>
+
+            <p class="footer-text">&#169; Copyright, <abbr>AELTC</abbr> 2019. All Rights reserved.</p>
+
+          </div>
+        </div>
+      </footer>
     </body>
 </html>
