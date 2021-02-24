@@ -187,6 +187,46 @@ p, h1, h2, h3 {
   }
 }
 
+.header-input::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  color: black;
+}
+
+.header-input:-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  color: black;
+}
+
+.header-input::-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  color: black;
+}
+
+.header-input::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  color: black;
+}
+
 .icon-basket-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
