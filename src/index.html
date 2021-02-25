@@ -42,11 +42,11 @@
 
               <li class="icon-list-item">
                 <button type="button" class="header-search-button">
-                  <svg class="icon-search">
+                  <svg class="icon-search" data-name="toggler">
                     <use href="./images/symbol-defs.svg#icon-search"></use>
                   </svg>
   
-                  <svg class="icon-cross">
+                  <svg class="icon-cross" data-name="toggler">
                     <use href="./images/symbol-defs.svg#icon-cross"></use>
                   </svg>
                 </button>
@@ -54,7 +54,7 @@
             </ul>
 
             <a href="#" class="logo-mobile">
-              <img src="images/Aurora.png" width="104" height="20">
+              Aurora
             </a>
 
             <a href="#" class="logo-desktop">
@@ -77,27 +77,58 @@
 
             <div class="header-input-wrapper">
               <input type="text" placeholder="What are you looking for?" class="header-input"/>
-              <svg class="icon-search">
+              <svg class="icon-search" >
                 <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
+              <svg class="icon-cross">
+                <use href="./images/symbol-defs.svg#icon-cross"></use>
               </svg>
             </div>
 
             <div class="registr-wrapper">
+              <p class="registr-user">Hi,Angels</p>
+
               <div class="registr-button-wrapper">
-                <button type="button" class="registr-button">
-                  Sign In
-                </button>
-                <button type="button" class="registr-button">
-                  Register
-                </button>
+                <div class="regist-btn-block">
+
+                  <button type="button" class="registr-button" data-name="register">
+                    Sign In
+                  </button>
+                  <button type="button" class="registr-button" data-name="register">
+                    Register
+                  </button>
+                </div>
               </div>
   
               <svg class="icon-basket">
                 <use href="./images/symbol-defs.svg#icon-basket"></use>
               </svg>
-  
+
+              <p class="registr-cart">2</p>
+
+              <div class="registr-cart-buttons">
+                <ul class="registr-cart-list">
+                  <li>
+                    <button type="button" class="registr-button hidden" data-name="add">
+                      Add items
+                    </button>
+                  </li>
+
+                  <li>
+                    <button type="button" class="registr-button hidden" data-name="remove">
+                      Remove items
+                    </button>
+                  </li>
+
+                  <li>
+                    <button type="button" class="registr-button hidden" data-name="register">
+                      Sign out
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+        </div>
 
           <nav class="navigation">
             <ul class="navigation-list">
@@ -131,9 +162,17 @@
             </ul>
           </nav>
 
-         
+        
 
+        <div class="header-input-wrapper input-mobile">
+          <input type="text" placeholder="What are you looking for?" class="header-input"/>
+          <svg class="icon-search mobile">
+            <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
         </div>
+
+      </div>
+
       </header>
 
       <main>

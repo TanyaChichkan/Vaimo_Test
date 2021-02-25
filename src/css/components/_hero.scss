@@ -13,6 +13,19 @@
        justify-content: center;
 
     }
+
+    &.is-registered{
+   
+
+        @include desktop(){
+            height: 810px;
+            background-image: url('./images/backgr-desk-reg.png');
+            background-size: cover;
+            background-position-y: 61px;
+           
+        }
+    }
+    
 }
 
 .page-title{
@@ -33,10 +46,3 @@
 
    
  
-.section-hero.active{
-   height:24px;
-   background-image: none;
-   background-color: $secondary-back-color-dark;
-
-   
-}
