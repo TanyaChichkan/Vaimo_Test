@@ -1,7 +1,7 @@
 @import '../utils/_mixines';
 
 .header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,12 +9,16 @@
     padding-bottom:30px;
     background-color: transparent;
 
+    transition: all 250ms linear;
+
     @include desktop(){
         top: 25px;
         padding-top:24px;
         background: linear-gradient(180deg, rgba(51, 51, 51, 0.9) 14.31%, rgba(27, 27, 27, 0.469176) 58.6%, rgba(0, 0, 0, 0.0001) 100%);
         mix-blend-mode: normal;
         opacity: 0.24;
+
+       
     }
 
     &-wrapper{
@@ -66,26 +70,19 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            background-color: white;
             height:24px;
         }
 
 
+        &-wrapper{
+            background-color: white;
+        }
+
     }
 
-    // &:active{
-    //     position:static;
-    //     background-image: url('./images/backgr-mob-active.jpg');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
+  
 
-    &.active{
-        position:static;
-        // background-image: url('./images/backgr-mob-active.jpg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
-    }
+   
 
     &.isFormOpen{
         background-color:white;
@@ -118,7 +115,7 @@
 
         }
 
-        &::placeholder{
+        &::-moz-placeholder{
             font-family: Poppins;
             font-style: normal;
             font-weight: 500;
@@ -260,3 +257,53 @@
         }
     }
 }
+
+
+header:hover{
+    background: none;
+    background-color: white;
+    opacity: initial;
+    position:fixed;
+
+    .logo-desktop{
+        color: black;
+    }
+
+    .header-input{
+        background: #F7F7F7;
+        border: 1px solid #F2F2F2;
+    }
+
+    .header-input:-moz-placeholder{
+        color: black;
+    }
+
+    // .header-input::-webkit-input-placeholder{
+    //     color: black;
+    // }
+
+    .header-input-wrapper > .icon-search{
+        fill: black;
+    }
+
+    .navigation-list-item{
+        color: black;
+    }
+
+    .registr-button{
+        color: black;
+    }
+
+    .registr-button:first-child::after{
+        background-color: black;
+    }
+
+    .icon-basket, .icon-search{
+        --color1: black;
+    }
+
+ 
+
+
+}
+
