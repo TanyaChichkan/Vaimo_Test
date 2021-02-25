@@ -38,8 +38,9 @@ function handleRemoveColor(e){
 
 function handlerOpenForm(e){
     if(container.style.width<1440){
+        console.log(e.target);
         if(e.target.dataset.name ==="toggler"){
-            e.target.nextElementSibling.classList.toggle('is-input-open');
+            
             e.target.classList.toggle('is-input-open');
             headerInput.classList.toggle('is-input-open');
         }

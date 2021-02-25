@@ -181,11 +181,7 @@
         width:18px;
         height: 18px;
 
-        &.is-input-open{
-            display: none;
-    
-        }
-
+       
 
         &.mobile{
             position: absolute;
@@ -452,6 +448,8 @@ header:hover, header.is-registered, header:active {
         display:none;
     }
 }
+
+
 
 
 // .header.is-registered{

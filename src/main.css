@@ -252,10 +252,6 @@ p, h1, h2, h3 {
   height: 18px;
 }
 
-.icon-search.is-input-open {
-  display: none;
-}
-
 .icon-search.mobile {
   position: absolute;
   -webkit-transform: translate(-28px, 8px);
