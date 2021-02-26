@@ -421,6 +421,10 @@ p, h1, h2, h3 {
   }
 }
 
+.registr-button.mobile {
+  color: black;
+}
+
 .registr-button:first-child {
   margin-right: 20px;
   position: relative;
@@ -1047,7 +1051,43 @@ footer .icon-right.is-open {
 
 @media screen and (min-width: 1440px) {
   .category-block.is-rendered {
+    border: none;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .category-title {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .category-title.link {
+    display: block;
+  }
+}
+
+.history-link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  .history-link {
+    position: absolute;
+    top: 0;
+    left: -29%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
   }
 }
 
@@ -1094,6 +1134,7 @@ footer .icon-right.is-open {
 @media screen and (min-width: 1440px) {
   .menu-wrapper-container {
     padding: 0;
+    position: relative;
   }
 }
 

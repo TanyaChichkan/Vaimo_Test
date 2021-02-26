@@ -298,9 +298,6 @@
 .registr{
     &-wrapper{
 
-
-      
-
         @include desktop(){
             position: static;
             display: flex;
@@ -308,8 +305,6 @@
             justify-content: space-between;
             align-items: center;
         }
-
-       
     }
 
     &-button-wrapper{
@@ -353,7 +348,9 @@
         line-height: 16px;
         }
 
-        // text-align: right;
+        &.mobile{
+            color: black;
+        }
        
 
         color: #FFFFFF;
