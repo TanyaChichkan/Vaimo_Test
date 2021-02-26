@@ -1,51 +1,49 @@
-import {registFlag} from './registration';
+import {refs} from './refs';
 
-const header = document.querySelector('header');
-const deliveryWrapper = document.querySelector('.header-delivery-wrapper');
-const container = document.querySelector('.container');
-const headerInput = document.querySelector('.input-mobile');
+
 
 let headerHover = false;
 
 
-header.addEventListener('mouseenter',handleChangeColor);
-header.addEventListener('mouseleave',handleRemoveColor);
-header.addEventListener('click',handlerOpenForm);
+refs.header.addEventListener('mouseenter',handleChangeColor);
+refs.header.addEventListener('mouseleave',handleRemoveColor);
+// header.addEventListener('click',handlerOpenForm);
 
-function toggleBackgr(){
-    header.classList.toggle('timer');
-}
+// function toggleBackgr(){
+//     header.classList.toggle('timer');
+// }
 
 function handleChangeColor(e){
     
     if(e.target.nodeName==="HEADER"){
         headerHover = true;
-        deliveryWrapper.style.backgroundColor="#F7F7F7";
-        deliveryWrapper.style.position="fixed";
-        deliveryWrapper.style.width="100%";
+        refs.deliveryWrapper.style.backgroundColor="#F7F7F7";
+        refs.deliveryWrapper.style.position="fixed";
+        refs.deliveryWrapper.style.width="100%";
     } 
 }
 
 function handleRemoveColor(e){
 
-    header.classList.contains('is-registered')?
-    deliveryWrapper.style.backgroundColor="#F7F7F7":
-    deliveryWrapper.style.backgroundColor="white" ;
-    headerInput.classList.remove('is-input-open');
+    refs.header.classList.contains('is-registered')?
+    refs.deliveryWrapper.style.backgroundColor="#F7F7F7":
+    refs.deliveryWrapper.style.backgroundColor="white" ;
+    refs.headerInput.classList.remove('is-input-open');
+    refs.togglerButtons[1].classList.remove('is-input-open');
     headerHover = false;
    
 }
 
-function handlerOpenForm(e){
-    if(container.style.width<1440){
-        console.log(e.target);
-        if(e.target.dataset.name ==="toggler"){
+// function handlerOpenForm(e){
+//     if(container.style.width<1440){
+//         console.log(e.target);
+//         if(e.target.dataset.name ==="toggler"){
             
-            e.target.classList.toggle('is-input-open');
-            headerInput.classList.toggle('is-input-open');
-        }
-    }
-}
+//             e.target.classList.toggle('is-input-open');
+//             headerInput.classList.toggle('is-input-open');
+//         }
+//     }
+// }
 
 
 

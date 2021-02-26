@@ -35,20 +35,25 @@
 
             <ul class="header-icon-list">
               <li class="icon-list-item">
-                <svg class="icon-burger">
-                  <use href="./images/symbol-defs.svg#icon-menu-burger"></use>
+                <button type="button" class="header-toggler-button">
+                <svg class="icon-burger" data-name="menu-toggler">
+                  <use href="./images/symbol-defs.svg#icon-menu-burger" data-name="menu-toggler"></use>
                 </svg>
+                <span class="icon-cross menu-close" data-name="menu-toggler">&#10006;</span>
+              </button>
+                </li>
               </li>
 
               <li class="icon-list-item">
-                <button type="button" class="header-search-button" >
-                  <svg class="icon-search menu-open" data-name="toggler">
+                <button type="button" class="header-toggler-button">
+                  <svg class="icon-search menu-open" data-name="input-toggler">
                     <use href="./images/symbol-defs.svg#icon-search"></use>
                   </svg>
   
-                  <svg class="icon-cross menu-close" data-name="toggler">
+                  <!-- <svg class="icon-cross menu-close" data-name="toggler">
                     <use href="./images/symbol-defs.svg#icon-cross"></use>
-                  </svg>
+                  </svg> -->
+                  <span class="icon-cross menu-close" data-name="input-toggler">&#10006;</span>
                 </button>
               </li>
             </ul>
@@ -104,7 +109,7 @@
                 <use href="./images/symbol-defs.svg#icon-basket"></use>
               </svg>
 
-              <p class="registr-cart">2</p>
+              <p class="registr-cart mobile">2</p>
 
               <div class="registr-cart-buttons">
                 <ul class="registr-cart-list">
@@ -130,39 +135,96 @@
             </div>
         </div>
 
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-list-item">
-                what’s new
-              </li>
 
-              <li class="navigation-list-item">
-                women
-              </li>
+        <div class="menu-wrapper">
+          <div class="menu-wrapper-container">
+            <h3 class="logo-mobile burger-menu">Aurora</h3>
+              <div class="category-block">
+                <p class="category-title"></p>
+                <a href="#">View all</a>
+              </div>
+              <nav class="navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-list-item" data-index="0">
+                    <div class="list-wrapper">
+                      <p class="category-title">what’s new</p>
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-              <li class="navigation-list-item">
-                accessories
-              </li>
+                  <li class="navigation-list-item" data-index="1">
+                    <div class="list-wrapper">
+                      <p class="category-title">women</p>
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-              <li class="navigation-list-item">
-                kids
-              </li>
+                  <li class="navigation-list-item" data-index="2">
+                    <div class="list-wrapper">
+                      accessories
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-              <li class="navigation-list-item">
-                beauty
-              </li>
+                  <li class="navigation-list-item" data-index="3">
+                    <div class="list-wrapper">
+                      kids
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-              <li class="navigation-list-item">
-                outlet
-              </li>
+                  <li class="navigation-list-item" data-index="4">
+                    <div class="list-wrapper">
+                      beauty
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-              <li class="navigation-list-item">
-                stories
-              </li>
-            </ul>
-          </nav>
+                  <li class="navigation-list-item" data-index="5">
+                    <div class="list-wrapper">
+                      outlet
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
 
-        
+                  <li class="navigation-list-item" data-index="6">
+                    <div class="list-wrapper">
+                      stories
+                      <svg class="icon-right">
+                        <use href="./images/symbol-defs.svg#icon-right"></use>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            
+
+            <div class="registr-button-wrapper mobile">
+              <div class="regist-btn-block">
+
+                <button type="button" class="registr-button" data-name="register">
+                  Sign In
+                </button>
+                <button type="button" class="registr-button" data-name="register">
+                  Register
+                </button>
+              </div>
+            </div>
+         
+        </div>
 
         <div class="header-input-wrapper input-mobile">
           <input type="text" placeholder="What are you looking for?" class="header-input"/>
@@ -172,7 +234,6 @@
         </div>
 
       </div>
-
       </header>
 
       <main>
@@ -341,5 +402,7 @@
           <p class="footer-text">&#169; Copyright, <abbr>AELTC</abbr> 2019. All Rights reserved.</p>
         </div>
       </footer>
+
+      <!-- <div class="backdrop"></div> -->
     </body>
 </html>

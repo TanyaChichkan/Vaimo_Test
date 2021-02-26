@@ -1,10 +1,11 @@
+import {refs} from './refs';
+
 document.body.addEventListener('click',cartHandler);
-const cart = document.querySelector('.registr-cart');
 
 function cartHandler(e){
     if(e.target.classList.contains('registr-button')){
 
-        let counter = Number(cart.textContent);
+        let counter = Number(refs.cart.textContent);
 
             if(e.target.dataset.name==="add"){
                 counter+=1;
@@ -14,7 +15,7 @@ function cartHandler(e){
                 counter-=1;
             }
 
-        cart.textContent = counter >=0 ? counter : 0;
+        refs.cart.textContent = counter >=0 ? counter : 0;
     }
 
 }

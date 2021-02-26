@@ -1,0 +1,29 @@
+.backdrop.is-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    overflow-y: scroll;
+  
+    transition: opacity 250ms linear;
+
+    @include desktop{
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+  
+  .backdrop {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+  }
+  

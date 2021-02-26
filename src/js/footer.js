@@ -1,11 +1,13 @@
 const footerList = document.querySelector('.footer-list');
 const footerItems = Array.from(document.querySelectorAll('.footer-list-item'));
-const footerIconRight = Array.from(document.querySelectorAll('.icon-right'));
+const footerIconRight = Array.from(document.querySelectorAll('footer .icon-right'));
 const categoriesList = Array.from(
   document.querySelectorAll('.categories-list'),
 );
 
 footerList.addEventListener('click', handlerFooter);
+
+console.log(footerIconRight);
 
 function handlerFooter(e) {
   footerItems.forEach((item, index) => {

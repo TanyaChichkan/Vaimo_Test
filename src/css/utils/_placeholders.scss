@@ -1,0 +1,39 @@
+%link-list{
+    display:flex;
+    flex-direction:column;
+}
+
+
+%link-list-item{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height:33px;
+    padding-left:15px;
+    padding-right: 15px;
+
+    border-bottom: 1px solid #E1E0E1;
+
+    
+}
+
+%list-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+%link-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

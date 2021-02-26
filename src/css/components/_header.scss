@@ -93,9 +93,38 @@
         background-color:white;
     }
 
-    &-search-button{
+    &-toggler-button{
         background-color:transparent;
         border:none;
+
+        &.is-input-open{
+
+            .icon-search{
+                display:none;
+            }
+
+            .icon-cross{
+                display:block;
+            }
+        }
+
+        &.is-menu-open{
+            .icon-burger{
+                display:none;
+            }
+
+            .menu-close{
+                display:block;
+                position: absolute;
+                top: 20%;
+                left: 6%;
+                z-index: 100;
+
+                @media screen and (min-width: 639px){
+                    left: 3%;
+                }
+            }
+        }
     }
 
     &-input{
@@ -200,26 +229,32 @@
     }
 
     &-basket{
+        display: none;
         width:16px;
         height: 24px;
+
+        @include desktop(){
+            display: block;
+        }
         
     }
 
     &-cross{
         display: none;
+
+        width:16px;
+        height: 16px;
        
 
-        &.is-input-open{
-            display: block;
-            width:16px;
-            height: 16px;
-        }
+       
     }
 
     &-location{
         width:8px;
         height: 11px;
     }
+
+    
 }
 
 .logo{
@@ -236,6 +271,10 @@
 
         @include desktop(){
             display: none;
+        }
+
+        &.burger-menu{
+            color: black;
         }
     }
 
@@ -259,9 +298,11 @@
 .registr{
     &-wrapper{
 
-    display:none;
+
+      
 
         @include desktop(){
+            position: static;
             display: flex;
             width:148px;
             justify-content: space-between;
@@ -272,21 +313,48 @@
     }
 
     &-button-wrapper{
-        display: flex;
+        display: none;
+
+        @include desktop(){
+            display: flex;
+        }
+
+        &.mobile{
+            display: flex;
+            background-color:  #F7F7F7;
+            padding-top:16px;
+            padding-bottom:15px;
+            padding-left: 15px;
+
+
+            @include desktop(){
+                display: none;
+            }
+        }
     }
 
     &-button{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 15px;
+
+        letter-spacing: 1px;
+
+
         background-color:transparent;
         outline:none;
         border:none;
         font-family: Poppins;
         font-style: normal;
+
+        @include desktop(){
         font-weight: 600;
         font-size: 11px;
         line-height: 16px;
+        }
 
-        text-align: right;
-        letter-spacing: 1px;
+        // text-align: right;
+       
 
         color: #FFFFFF;
 

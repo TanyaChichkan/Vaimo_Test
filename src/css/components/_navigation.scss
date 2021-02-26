@@ -1,34 +1,94 @@
 @import '../utils/_mixines';
 
 .navigation{
-    display:none;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
 
     @include desktop(){
         display: flex;
-        margin-top:24px;
+        
     }
 
     &-list{
         display: flex;
+        width: 100%;
         justify-content: space-between;
-        width: 642px;
         margin: 0 auto;
+        margin-bottom:79px;
+        
+        @include desktop(){
+            width: 642px;
+            margin-bottom:0;
+        }
 
         &-item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height:33px;
+            padding-top:16px;
+            padding-bottom: 13px;
+            padding-left: 2px;
+
+            align-items: flex-start;
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
             font-size: 13px;
             line-height: 19px;
-            /* identical to box height */
 
-            text-align: center;
             letter-spacing: 1px;
             text-transform: uppercase;
 
-            color: #FFFFFF;
-
+            border-bottom: 1px solid #F7F7F7;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+          
+        
+
+            @include desktop(){
+                width: initial;
+                display: block;
+                text-transform: capitalize;
+                border: none;
+                padding:0;
+                align-self: flex-start;
+                color: #FFFFFF;
+            }
+           
+          
         }
     }
+}
+
+.list-wrapper{
+    @extend %list-wrapper
+}
+
+.category-block{
+    display: none;
+
+    &.is-rendered{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+
+        @include desktop(){
+            display: none;
+        }
+    }
+
+  
+}
+
+.category-title{
+    @extend %link-text;
 }

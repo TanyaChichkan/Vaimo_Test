@@ -1,8 +1,11 @@
 import './main.scss';
+import './js/refs';
 import './js/footer';
 import './js/header';
 import './js/registration';
 import './js/counter';
+import './js/menuToggler';
+import './js/menuNav';
 
 
 
