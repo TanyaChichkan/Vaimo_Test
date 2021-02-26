@@ -13,7 +13,7 @@ function formOpenHandler(e){
         if(e.target.dataset.name==="menu-toggler" && refs.container.style.width<1440){
             refs.togglerButtons[0].classList.toggle('is-menu-open');
             refs.menuWrapper.classList.toggle('is-menu-open');
-            // refs.backdrop.classList.toggle('is-open');
+            refs.backdrop.classList.toggle('is-open');
         }
     }
 };

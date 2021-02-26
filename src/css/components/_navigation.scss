@@ -85,6 +85,14 @@
             border:none;
             padding:0;
 
+           
+
+        }
+
+        &.icon-right{
+            @include desktop(){
+                display: none;
+            }
         }
     }
 

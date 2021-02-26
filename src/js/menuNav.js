@@ -11,7 +11,6 @@ const navLinks = ["What's new", "women", "accessories", "kids", "beauty", "outle
 const miniCategeory = ["T-shirts","Sweatshirts","Knitwear","Jeans","Jumpsuits","Skirts","Dresses"];
 
 function navHandler(e){
-    console.log(e.target);
     refs.navListItem.forEach((item,index)=>{
       
         if ((Number(e.target.dataset.index) === 1) && refs.navList.dataset.id==="first-page") {
@@ -19,12 +18,16 @@ function navHandler(e){
             refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;
             refs.navList.dataset.id='second-page';
             refs.navList.innerHTML=markUpRender(arr,2);
+            refs.mobileDelivery.classList.toggle('is-rendered');
+            refs.deliverySlogan.classList.toggle('is-rendered');
+            
         }
 
         if((Number(e.target.dataset.index) === 0) && refs.navList.dataset.id==="second-page"){
             refs.navList.innerHTML=markUpRender(miniCategeory,3);
             refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;
-            refs.iconGoBack.style.display="block";
+            refs.iconGoBack.classList.toggle('is-rendered');
+            refs.mobileDelivery.classList.toggle('is-shown');
             refs.navList.dataset.id='third-page';
         }
     });
@@ -33,18 +36,22 @@ function navHandler(e){
         refs.categoryBlock.classList.toggle('is-rendered');
         refs.navList.innerHTML=markUpRender(navLinks,1);
         refs.navList.dataset.id="first-page";
+        refs.mobileDelivery.classList.toggle('is-rendered');
+        
     }  
 
     if(e.target.dataset.id==="go-back" && refs.navList.dataset.id==="third-page"){
         refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;
         refs.navList.dataset.id='second-page';
         refs.navList.innerHTML=markUpRender(arr,2);
+        refs.iconGoBack.classList.toggle('is-rendered');
     }
 
     if(e.target.dataset.id==="go-back" && refs.navList.dataset.id==="third-page"){
         refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;
         refs.navList.dataset.id='second-page';
         refs.navList.innerHTML=markUpRender(arr,2);
+        refs.iconGoBack.classList.toggle('is-rendered');
     }
 
     if(e.target.dataset.id==="go-back" && refs.navList.dataset.id==="second-page"){

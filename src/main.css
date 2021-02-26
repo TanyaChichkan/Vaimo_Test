@@ -172,6 +172,7 @@ p, h1, h2, h3 {
 .header-toggler-button {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .header-toggler-button.is-input-open .icon-search {
@@ -295,18 +296,6 @@ p, h1, h2, h3 {
   }
 }
 
-.icon-basket {
-  display: none;
-  width: 16px;
-  height: 24px;
-}
-
-@media screen and (min-width: 1440px) {
-  .icon-basket {
-    display: block;
-  }
-}
-
 .icon-cross {
   display: none;
   width: 16px;
@@ -356,6 +345,30 @@ p, h1, h2, h3 {
   }
 }
 
+.header-icon-list ~ .icon-basket {
+  display: block;
+  width: 16px;
+  height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-icon-list ~ .icon-basket {
+    display: none;
+  }
+}
+
+.registr-button-wrapper ~ .icon-basket {
+  display: none;
+  width: 16px;
+  height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+  .registr-button-wrapper ~ .icon-basket {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .registr-wrapper {
     position: static;
@@ -392,6 +405,7 @@ p, h1, h2, h3 {
   padding-top: 16px;
   padding-bottom: 15px;
   padding-left: 15px;
+  margin-bottom: 2px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -410,7 +424,7 @@ p, h1, h2, h3 {
   border: none;
   font-family: Poppins;
   font-style: normal;
-  color: #FFFFFF;
+  color: black;
 }
 
 @media screen and (min-width: 1440px) {
@@ -418,11 +432,8 @@ p, h1, h2, h3 {
     font-weight: 600;
     font-size: 11px;
     line-height: 16px;
+    color: #FFFFFF;
   }
-}
-
-.registr-button.mobile {
-  color: black;
 }
 
 .registr-button:first-child {
@@ -436,7 +447,13 @@ p, h1, h2, h3 {
   height: 16px;
   position: absolute;
   right: -11px;
-  background-color: white;
+  background-color: black;
+}
+
+@media screen and (min-width: 1440px) {
+  .registr-button:first-child::after {
+    background-color: white;
+  }
 }
 
 .registr-cart {
@@ -499,6 +516,20 @@ p, h1, h2, h3 {
 
 .registr-wrapper.is-registered .registr-user {
   display: block;
+}
+
+.mobile-cart {
+  display: none;
+}
+
+.mobile-cart.is-registered {
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile-cart.is-registered {
+    display: none;
+  }
 }
 
 header:hover, header.is-registered, header:active {
@@ -1060,6 +1091,12 @@ footer .icon-right.is-open {
 }
 
 @media screen and (min-width: 1440px) {
+  .category-block.is-rendered.icon-right {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .category-title {
     display: none;
   }
@@ -1148,6 +1185,8 @@ footer .icon-right.is-open {
 
 .menu-wrapper.is-menu-open {
   display: block;
+  z-index: 99;
+  min-height: 695px;
 }
 
 .menu-wrapper.is-menu-open .navigation {
@@ -1200,11 +1239,96 @@ footer .icon-right.is-open {
   }
 }
 
-.icon-right.category-block {
+.icon-back {
   display: none;
+}
+
+.icon-back.is-rendered {
+  display: block;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   height: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+  .icon-back.is-rendered {
+    display: none;
+  }
+}
+
+.delivery-wrapper {
+  display: none;
+  background-color: #F7F7F7;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 32px;
+  text-align: initial;
+}
+
+.delivery-wrapper.delivery-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  margin-left: 7px;
+}
+
+.delivery-wrapper.is-rendered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .delivery-wrapper.is-rendered {
+    display: none;
+  }
+}
+
+.delivery-wrapper.is-rendered .icon-location {
+  display: none;
+}
+
+.delivery-wrapper.is-shown .icon-location {
+  display: block;
+  width: 10px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+@media screen and (min-width: 1440px) {
+  .delivery-wrapper {
+    display: none;
+  }
+}
+
+.delivery-slogan {
+  display: none;
+}
+
+.delivery-slogan.is-rendered {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+@media screen and (min-width: 1440px) {
+  .delivery-slogan.is-rendered {
+    display: none;
+  }
 }
 
 .list-wrapper {
@@ -1237,7 +1361,7 @@ footer .icon-right.is-open {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   visibility: visible;
   pointer-events: initial;

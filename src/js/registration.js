@@ -15,6 +15,8 @@ function registrHandler(e){
         refs.deliveryWrapper.classList.toggle('is-registered');
         refs.cartButtons.classList.toggle('is-registered');
 
-
+        
+        // refs.cartMobile.classList.toggle('is-registered');
+        // console.log(true);
     }
 }

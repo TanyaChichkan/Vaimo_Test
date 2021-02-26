@@ -5,6 +5,7 @@ export const refs={
     togglerButtons: Array.from(document.querySelectorAll('.header-toggler-button')),
     iconList: document.querySelector('.header-icon-list'),
     cart: document.querySelector('.registr-cart'),
+    cartMobile: document.querySelector('.mobile-cart'),
     container: document.querySelector('.container'),
     registrBtnBlock: document.querySelector('.registr-wrapper'),
     heroSection: document.querySelector('.section-hero'),
@@ -14,6 +15,7 @@ export const refs={
     navList:document.querySelector('.navigation-list'),
     navListItem: Array.from(document.querySelectorAll('.navigation-list-item')),
     categoryBlock: document.querySelector('.category-block'),
-    iconGoBack:document.querySelector('.menu-wrapper .icon-right'),
-
+    iconGoBack:document.querySelector('.icon-back'),
+    mobileDelivery: document.querySelector('.delivery-wrapper'),
+    deliverySlogan:document.querySelector('.delivery-slogan'),
 }

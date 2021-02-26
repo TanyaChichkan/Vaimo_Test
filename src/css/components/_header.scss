@@ -96,6 +96,7 @@
     &-toggler-button{
         background-color:transparent;
         border:none;
+        outline: none;
 
         &.is-input-open{
 
@@ -198,6 +199,7 @@
         width:46px;
         height: 24px;
         background-color: transparent;
+
     }
 
     &-burger{
@@ -228,16 +230,7 @@
 
     }
 
-    &-basket{
-        display: none;
-        width:16px;
-        height: 24px;
-
-        @include desktop(){
-            display: block;
-        }
-        
-    }
+   
 
     &-cross{
         display: none;
@@ -295,6 +288,31 @@
     }
 }
 
+.header-icon-list ~ .icon-basket{
+    display: block;
+    width:16px;
+    height: 24px;
+
+  
+    @include desktop(){
+        display: none;
+    }
+    
+}
+
+
+
+.registr-button-wrapper ~ .icon-basket{
+    display: none;
+    width:16px;
+    height: 24px;
+
+    @include desktop(){
+        display: block;
+    }
+    
+}
+
 .registr{
     &-wrapper{
 
@@ -320,6 +338,7 @@
             padding-top:16px;
             padding-bottom:15px;
             padding-left: 15px;
+            margin-bottom:2px;
 
 
             @include desktop(){
@@ -341,19 +360,18 @@
         border:none;
         font-family: Poppins;
         font-style: normal;
+        color: black;
 
         @include desktop(){
         font-weight: 600;
         font-size: 11px;
         line-height: 16px;
-        }
-
-        &.mobile{
-            color: black;
-        }
-       
-
         color: #FFFFFF;
+        }
+
+       
+       
+      
 
         &:first-child{
             margin-right:20px;
@@ -366,7 +384,11 @@
                 height: 16px;
                 position: absolute;
                 right: -11px;
-                background-color: white;
+                background-color: black;
+
+                @include desktop(){
+                    background-color: white;
+                }
                 
                 
             }
@@ -437,6 +459,19 @@
     
 }
 
+.mobile-cart{
+
+    display:none;
+    
+    &.is-registered{
+        display: block;
+
+        @include desktop(){
+            display: none;
+        }
+    }
+}
+
 
 header:hover, header.is-registered, header:active {
     background: none;
@@ -477,7 +512,7 @@ header:hover, header.is-registered, header:active {
     .navigation-list-item{
         color: black;
     }
-
+        
     .registr-button{
         color: black;
     }
@@ -513,6 +548,7 @@ header:hover, header.is-registered, header:active {
         display:none;
     }
 }
+
 
 
 

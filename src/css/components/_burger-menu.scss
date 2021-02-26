@@ -25,6 +25,8 @@
     
     &.is-menu-open {
         display: block;
+        z-index: 99;
+        min-height: 695px;
         
 
         .navigation{
@@ -45,8 +47,6 @@
             }
 
         }
-
-       
     }
 
     @include desktop(){
@@ -63,8 +63,92 @@
       
 }
 
-.icon-right.category-block{
+.icon-back{
     display:none;
-    transform: rotate(-180deg);
-    height: 12px;
+
+    &.is-rendered{
+        display: block;
+        transform: rotate(-180deg);
+        height: 12px;
+
+        @include desktop(){
+            display: none;
+        }
+    }
+
+   
+}
+
+.delivery-wrapper{
+    display: none;
+    background-color:  #F7F7F7;
+    padding-top:16px;
+    padding-bottom:15px;
+    padding-left: 32px;
+    text-align: initial;
+   
+    &.delivery-text{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 15px;
+
+        letter-spacing: 0.5px;
+        margin-left: 7px;
+    }
+       
+
+    &.is-rendered{
+        display: flex;
+        align-items: center;
+
+        @include desktop(){
+            display: none;
+        }
+
+       .icon-location{
+           display: none;
+       }
+            
+    }
+
+    &.is-shown{
+        .icon-location{
+            display: block;
+            width:10px;
+            height: 13px;
+            margin-right: 7px;
+
+        } 
+    }
+
+    @include desktop(){
+        display: none;
+    }
+}
+
+.delivery-slogan{
+
+    display: none;
+
+    &.is-rendered{
+    display:block;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #000000;
+
+    @include desktop(){
+        display: none;
+    }
+    }
 }
