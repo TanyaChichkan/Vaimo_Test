@@ -14,5 +14,6 @@ export const refs={
     navList:document.querySelector('.navigation-list'),
     navListItem: Array.from(document.querySelectorAll('.navigation-list-item')),
     categoryBlock: document.querySelector('.category-block'),
+    iconGoBack:document.querySelector('.menu-wrapper .icon-right'),
 
 }

@@ -75,6 +75,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         border-bottom: 1px solid #000000;
         padding-bottom: 13px;
         padding-left: 30px;
@@ -108,13 +109,21 @@
 
 .history-link{
     text-decoration: underline;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+
+    letter-spacing: 0.0916667px;
+
+    color: #000000;
 
     @include desktop(){
         position: absolute;
         top: 0;
         left: -29%;
-        font-family: Poppins;
-        font-style: normal;
+      
         font-weight: 600;
         font-size: 13px;
         line-height: 19px;
@@ -131,3 +140,4 @@
         
     }
 }
+

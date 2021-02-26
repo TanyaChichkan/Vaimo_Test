@@ -1043,6 +1043,9 @@ footer .icon-right.is-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #000000;
   padding-bottom: 13px;
   padding-left: 30px;
@@ -1070,6 +1073,13 @@ footer .icon-right.is-open {
 
 .history-link {
   text-decoration: underline;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.0916667px;
+  color: #000000;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1077,8 +1087,6 @@ footer .icon-right.is-open {
     position: absolute;
     top: 0;
     left: -29%;
-    font-family: Poppins;
-    font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 19px;
@@ -1190,6 +1198,13 @@ footer .icon-right.is-open {
     position: static;
     padding: 0;
   }
+}
+
+.icon-right.category-block {
+  display: none;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  height: 12px;
 }
 
 .list-wrapper {
