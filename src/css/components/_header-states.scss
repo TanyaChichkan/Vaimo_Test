@@ -1,0 +1,40 @@
+.header {
+    &.isFormOpen{
+        background-color:$main-back-color;
+    }
+
+    &-toggler-button{
+        background-color:transparent;
+        border:none;
+        outline: none;
+
+        &.is-input-open{
+
+            .icon-search{
+                display:none;
+            }
+
+            .icon-cross{
+                display:block;
+            }
+        }
+
+        &.is-menu-open{
+            .icon-burger{
+                display:none;
+            }
+
+            .menu-close{
+                display:block;
+                position: absolute;
+                top: 20%;
+                left: 6%;
+                z-index: 100;
+
+                @media screen and (min-width: 639px){
+                    left: 3%;
+                }
+            }
+        }
+    }
+}

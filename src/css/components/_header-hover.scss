@@ -1,0 +1,44 @@
+header:hover, header.is-registered, header:active {
+    background: none;
+    background-color: #ffffff;
+    opacity: initial;
+    position:fixed;
+
+    .logo{
+        color: $primary-color;
+    }
+
+    .header-input{
+        background: $secondary-back-color-light;
+        border: 1px solid $border-color;
+    }
+
+    .header-input:-moz-placeholder{
+        color: $primary-color;
+    }
+
+    .header-input-wrapper > .icon-search{
+        fill: $primary-color;
+    }
+
+    .navigation-list-item{
+        color: $primary-color;
+    }
+
+    .history-link{
+        color: $primary-color;
+    }
+        
+    .registr-button{
+        color: $primary-color;
+    }
+
+    .registr-button:first-child::after{
+        background-color: $primary-color;
+    }
+
+    .icon-basket, .icon-search,.icon-burger{
+        --color1: $primary-color;
+    }
+
+}

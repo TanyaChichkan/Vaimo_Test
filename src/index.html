@@ -9,6 +9,8 @@
           rel="stylesheet"> 
 
     <body>
+
+      <!-- delivery info for desktop-->
       <div class="header-delivery-wrapper">
         <div class=container>
             <div class="header-delivery">
@@ -28,44 +30,42 @@
         </div>
       </div>
      
+      <!-- header -->
       <header class="header">
 
         <div class="container">
+
           <div class="header-wrapper">
 
+            <!-- icon-list for mobile -->
             <ul class="header-icon-list">
               <li class="icon-list-item">
                 <button type="button" class="header-toggler-button">
-                <svg class="icon-burger" data-name="menu-toggler">
-                  <use href="./images/symbol-defs.svg#icon-menu-burger" data-name="menu-toggler"></use>
-                </svg>
-                <span class="icon-cross menu-close" data-name="menu-toggler">&#10006;</span>
-              </button>
-                </li>
+                  <svg class="icon-burger" data-name="menu-toggler">
+                    <use href="./images/symbol-defs.svg#icon-menu-burger" data-name="menu-toggler"></use>
+                  </svg>
+                  <span class="icon-cross menu-close" data-name="menu-toggler">&#10006;</span>
+                </button>
               </li>
+              
 
               <li class="icon-list-item">
                 <button type="button" class="header-toggler-button">
                   <svg class="icon-search menu-open" data-name="input-toggler">
                     <use href="./images/symbol-defs.svg#icon-search"></use>
                   </svg>
-  
-                  <!-- <svg class="icon-cross menu-close" data-name="toggler">
-                    <use href="./images/symbol-defs.svg#icon-cross"></use>
-                  </svg> -->
+
                   <span class="icon-cross menu-close" data-name="input-toggler">&#10006;</span>
                 </button>
               </li>
             </ul>
 
-            <a href="#" class="logo-mobile">
+            <!-- logo all devices -->
+            <a href="#" class="logo">
               Aurora
             </a>
 
-            <a href="#" class="logo-desktop">
-              Aurora
-            </a>
-
+            <!-- user-info cart for mobile -->
             <ul class="header-icon-list">
               <li class="icon-list-item">
                 <span class="icon-basket-wrapper">
@@ -80,6 +80,7 @@
               </li>
             </ul>
 
+            <!-- header-input desktop -->
             <div class="header-input-wrapper">
               <input type="text" placeholder="What are you looking for?" class="header-input"/>
               <svg class="icon-search" >
@@ -90,6 +91,7 @@
               </svg>
             </div>
 
+            <!-- user-info-desktop -->
             <div class="registr-wrapper">
               <p class="registr-user">Hi,Angels</p>
 
@@ -133,91 +135,91 @@
                 </ul>
               </div>
             </div>
-        </div>
 
-
-        <div class="menu-wrapper">
-
-          <div class="menu-wrapper-container">
-
-            <h3 class="logo-mobile burger-menu">Aurora</h3>
-
-              <div class="category-block" data-id="go-back">
-                <svg class="icon-right icon-back">
-                  <use href="./images/symbol-defs.svg#icon-right"></use>
-                </svg>
-                <p class="category-title"></p>
-                <a href="#" class="history-link">View all</a>
-              </div>
-
-              <nav class="navigation">
-                <ul class="navigation-list" data-id="first-page">
-                  <li class="navigation-list-item" data-index="0">
-                    <div class="list-wrapper">
-                      <p class="category-title link">what’s new</p>
-                      <svg class="icon-right ">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="1">
-                    <div class="list-wrapper">
-                      <p class="category-title link">women</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="2">
-                    <div class="list-wrapper">
-                      <p class="category-title link">accessories</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="3">
-                    <div class="list-wrapper">
-                      <p class="category-title link">kids</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="4">
-                    <div class="list-wrapper">
-                      <p class="category-title link">beauty</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="5">
-                    <div class="list-wrapper">
-                      <p class="category-title link">outlet</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-
-                  <li class="navigation-list-item" data-index="6">
-                    <div class="list-wrapper">
-                      <p class="category-title link">stories</p>
-                      <svg class="icon-right">
-                        <use href="./images/symbol-defs.svg#icon-right"></use>
-                      </svg>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
           </div>
+
+           <!-- navigation for desktop + burger for mobile -->
+          <div class="menu-wrapper">
+            <div class="menu-wrapper-container">
+              <h3 class="logo burger-menu">Aurora</h3>
+
+                <div class="category-block" data-id="go-back">
+                  <svg class="icon-right icon-back">
+                    <use href="./images/symbol-defs.svg#icon-right"></use>
+                  </svg>
+                  <p class="category-title"></p>
+                  <a href="#" class="history-link">View all</a>
+                </div>
+
+                <nav class="navigation">
+                  <ul class="navigation-list" data-id="first-page">
+                    <li class="navigation-list-item" data-index="0">
+                      <div class="list-wrapper">
+                        <p class="category-title link">what’s new</p>
+                        <svg class="icon-right ">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="1">
+                      <div class="list-wrapper">
+                        <p class="category-title link">women</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="2">
+                      <div class="list-wrapper">
+                        <p class="category-title link">accessories</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="3">
+                      <div class="list-wrapper">
+                        <p class="category-title link">kids</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="4">
+                      <div class="list-wrapper">
+                        <p class="category-title link">beauty</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="5">
+                      <div class="list-wrapper">
+                        <p class="category-title link">outlet</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+
+                    <li class="navigation-list-item" data-index="6">
+                      <div class="list-wrapper">
+                        <p class="category-title link">stories</p>
+                        <svg class="icon-right">
+                          <use href="./images/symbol-defs.svg#icon-right"></use>
+                        </svg>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
     
+          <!-- registr for mobile burg-menu -->
           <div class="registr-button-wrapper mobile">
             <div class="regist-btn-block">
 
@@ -230,6 +232,7 @@
             </div>
           </div>
 
+          <!-- delivery block for mobile burg-menu -->
           <div class="delivery-wrapper">
 
             <span>
@@ -247,18 +250,21 @@
           <p class="delivery-slogan">
             We deliver Worldwide
           </p>
+          </div>
+
+          <!-- backdrop for mobile burg-menu -->
+          <div class="backdrop"></div>
+
+          <!-- mobile input -->
+          <div class="header-input-wrapper input-mobile">
+            <input type="text" placeholder="What are you looking for?" class="header-input"/>
+            <svg class="icon-search mobile">
+              <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </div>
+
         </div>
 
-        <div class="backdrop"></div>
-
-        <div class="header-input-wrapper input-mobile">
-          <input type="text" placeholder="What are you looking for?" class="header-input"/>
-          <svg class="icon-search mobile">
-            <use href="./images/symbol-defs.svg#icon-search"></use>
-          </svg>
-        </div>
-
-      </div>
       </header>
 
       <main>
@@ -287,10 +293,12 @@
         </section>
       </main>
 
+      <!-- footer -->
       <footer class="footer">
         <div class="container">
           <div class="footer-info">
 
+            <!-- category list -->
             <ul class="footer-list">
               <li class="footer-list-item" data-index="0">
                 <div class="footer-list-wrapper">
@@ -349,85 +357,166 @@
                 </ul>
               </li>
             
-
+              <!-- icons for desktop -->
               <li class="footer-list-item social-item">
                 Social
                 <ul class="footer-socials">
                   <li class="footer-socials-item">
-                    <svg class="icon-instagram">
-                      <use href="./images/symbol-defs.svg#icon-insta"></use>
-                    </svg>
+                    <a href="https://www.instagram.com/" 
+                      aria-label="Link to Instagram" 
+                      target="blank"
+                      title = "Link to Instagram"
+                      rel="nofollow noreferrer"
+                      class="footer-link"
+                      >
+                      <svg class="icon-instagram footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-insta"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="footer-socials-item">
-                    <svg class="icon-twitter">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
+                    <a href="https://www.twitter.com/" 
+                      aria-label="Link to Twitter" 
+                      target="blank"
+                      title = "Link to Twitter" 
+                      rel="nofollow noreferrer"
+                      class="footer-link"
+                    >
+                      <svg class="icon-twitter footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="footer-socials-item">
-                    <svg class="icon-snapchat">
-                      <use href="./images/symbol-defs.svg#icon-snapchat"></use>
-                    </svg>
+                    <a href="https://www.snapchat.com/" 
+                      aria-label="Link to Snapchat" 
+                      target="blank"
+                      title = "Link to Snapchat" 
+                      rel="nofollow noreferrer"
+                      class="footer-link"
+                    >
+                      <svg class="icon-snapchat footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-snapchat"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="footer-socials-item">
-                    <svg class="icon-facebook">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" 
+                      aria-label="Link to Facebook" 
+                      target="blank"
+                      title = "Link to Facebook"  
+                      rel="nofollow noreferrer"
+                      class="footer-link"
+                    >
+                      <svg class="icon-facebook footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="footer-socials-item">
-                    <svg class="icon-youtube">
-                      <use href="./images/symbol-defs.svg#icon-youtube"></use>
-                    </svg>
+                    <a href="https://www.youtube.com/" 
+                      aria-label="Link to Youtube" 
+                      target="blank"
+                      title = "Link to Youtube" 
+                      rel="nofollow noreferrer"
+                      class="footer-link"
+                    >
+                      <svg class="icon-youtube footer-icon">
+                        <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
                   </li>
 
                 </ul>
               </li>
 
-          </ul>
-
-          <div class="footer-mob-icons">
-            <ul class="footer-socials">
-              <li class="footer-socials-item">
-                <svg class="icon-instagram">
-                  <use href="./images/symbol-defs.svg#icon-insta"></use>
-                </svg>
-              </li>
-
-              <li class="footer-socials-item">
-                <svg class="icon-twitter">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </li>
-
-              <li class="footer-socials-item">
-                <svg class="icon-snapchat">
-                  <use href="./images/symbol-defs.svg#icon-snapchat"></use>
-                </svg>
-              </li>
-
-              <li class="footer-socials-item">
-                <svg class="icon-facebook">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </li>
-
-              <li class="footer-socials-item">
-                <svg class="icon-youtube">
-                  <use href="./images/symbol-defs.svg#icon-youtube"></use>
-                </svg>
-              </li>
-
             </ul>
-          </div>
+
+            <!-- icon-list for mobile -->
+            <div class="footer-mob-icons">
+              <ul class="footer-socials">
+                <li class="footer-socials-item">
+                  <a href="https://www.instagram.com/" 
+                    aria-label="Link to Instagram" 
+                    target="blank"
+                    title = "Link to Instagram"
+                    rel="nofollow noreferrer"
+                    class="footer-link"
+                    >
+                    <svg class="icon-instagram footer-icon">
+                      <use href="./images/symbol-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer-socials-item">
+                  <a href="https://www.twitter.com/" 
+                    aria-label="Link to Twitter" 
+                    target="blank"
+                    title = "Link to Twitter" 
+                    rel="nofollow noreferrer"
+                    class="footer-link"
+                  >
+                    <svg class="icon-twitter footer-icon">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer-socials-item">
+                  <a href="https://www.snapchat.com/" 
+                    aria-label="Link to Snapchat" 
+                    target="blank"
+                    title = "Link to Snapchat" 
+                    rel="nofollow noreferrer"
+                    class="footer-link"
+                  >
+                    <svg class="icon-snapchat footer-icon">
+                      <use href="./images/symbol-defs.svg#icon-snapchat"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer-socials-item">
+                  <a href="https://www.facebook.com/" 
+                    aria-label="Link to Facebook" 
+                    target="blank"
+                    title = "Link to Facebook"  
+                    rel="nofollow noreferrer"
+                    class="footer-link"
+                  >
+                    <svg class="icon-facebook footer-icon">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer-socials-item">
+                  <a href="https://www.youtube.com/" 
+                    aria-label="Link to Youtube" 
+                    target="blank"
+                    title = "Link to Youtube" 
+                    rel="nofollow noreferrer"
+                    class="footer-link"
+                  >
+                    <svg class="icon-youtube footer-icon">
+                      <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
             
           </div>
+
           <p class="footer-text">&#169; Copyright, <abbr>AELTC</abbr> 2019. All Rights reserved.</p>
         </div>
       </footer>
 
-     
     </body>
 </html>

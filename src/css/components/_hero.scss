@@ -15,21 +15,17 @@
        justify-content: center;
        margin: 0;;
        max-width: initial;
-
     }
 
     &.is-registered{
    
-
         @include desktop(){
             height: 810px;
             background-image: url('./images/backgr-desk-reg.png');
             background-size: cover;
             background-position-y: 61px;
-           
         }
     }
-    
 }
 
 .page-title{
@@ -37,14 +33,12 @@
 
     @include desktop(){
         display: block;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 90px;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 90px;
 
-    text-align: center;
-    color: #FFFFFF;
+        text-align: center;
+        color: $main-back-color;
     }
 }
 

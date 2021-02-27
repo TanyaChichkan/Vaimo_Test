@@ -1,0 +1,27 @@
+@import '../utils/mixines';
+
+.logo{
+    display:block;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 57px;
+    letter-spacing: 0.95px;
+    color: $main-back-color;
+
+    &.mobile{
+       
+        @include desktop(){
+            display: none;
+        }
+
+        &.burger-menu{
+            color: $primary-color;
+        }
+    }
+}
+
+.logo.burger-menu{
+    @include desktop(){
+        display: none;
+    }
+}

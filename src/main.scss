@@ -2,14 +2,20 @@
 @import './css/utils/vars';
 @import './css/utils/container';
 @import './css/utils/general';
+@import './css/base/logo';
+@import './css/base/icons';
+@import './css/base/input.scss';
 @import './css/components/header';
+@import './css/components/header-states';
+@import './css/components/header-hover';
 @import './css/components/hero';
 @import './css/components/registration';
 @import './css/components/footer';
 @import './css/components/navigation';
 @import './css/components/burger-menu';
 @import './css/utils/placeholders';
-@import './css/components/_backdrop.scss'
+@import './css/base/_backdrop.scss';
+@import './css/components/user-info';
 
 
 

@@ -1,0 +1,50 @@
+.header-input{
+
+    width: 100%;
+    background: $secondary-back-color-light;
+    mix-blend-mode: normal;
+    opacity: 0.24;
+    border-radius: 3px;
+    padding-top: 12px;
+    padding-left: 12px; 
+
+    @include desktop(){
+        width: 584px;
+        height:48px;
+        padding-left:16px;
+        padding-right: 16px;
+    }
+
+    &-wrapper {
+        display:none;
+
+        @include desktop(){
+        display:block;
+        position: relative;
+        }
+    }
+
+    &::-moz-placeholder{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+
+        color: $primary-color;
+    }
+}
+
+.input-mobile{
+    display: none;
+    width:100%;
+    
+    @include desktop(){
+        display:none;
+    }
+}
+    
+.input-mobile.is-input-open{
+    display:block;
+}

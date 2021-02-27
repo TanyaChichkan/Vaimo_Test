@@ -6,10 +6,8 @@
     width: 100%;
     margin: 0 auto;
 
-
     @include desktop(){
         display: flex;
-        
     }
 
     &-list{
@@ -35,8 +33,6 @@
             padding-left: 2px;
 
             align-items: flex-start;
-            font-family: Poppins;
-            font-style: normal;
             font-weight: 600;
             font-size: 13px;
             line-height: 19px;
@@ -44,11 +40,9 @@
             letter-spacing: 1px;
             text-transform: uppercase;
 
-            border-bottom: 1px solid #F7F7F7;
+            border-bottom: 1px solid $secondary-back-color-light;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
           
-        
-
             @include desktop(){
                 width: initial;
                 display: block;
@@ -56,27 +50,25 @@
                 border: none;
                 padding:0;
                 align-self: flex-start;
-                color: #FFFFFF;
+                color: $main-back-color;
             }
-           
-          
         }
     }
 }
 
 .list-wrapper{
-    @extend %list-wrapper
+    @extend %flex-container-row;
+    width: 100%;
+    pointer-events: none;
 }
 
 .category-block{
     display: none;
 
     &.is-rendered{
-        display: flex;
+        @extend %flex-container-row;
         width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid $primary-color;
         padding-bottom: 13px;
         padding-left: 30px;
         padding-right: 30px;
@@ -84,9 +76,6 @@
         @include desktop(){
             border:none;
             padding:0;
-
-           
-
         }
 
         &.icon-right{
@@ -95,10 +84,6 @@
             }
         }
     }
-
-    
-
-  
 }
 
 .category-title{
@@ -117,35 +102,29 @@
 
 .history-link{
     text-decoration: underline;
-    font-family: Poppins;
-    font-style: normal;
     font-weight: normal;
     font-size: 11px;
     line-height: 16px;
 
     letter-spacing: 0.0916667px;
 
-    color: #000000;
+    color: $primary-color;
 
     @include desktop(){
         position: absolute;
         top: 0;
         left: -29%;
-      
         font-weight: 600;
         font-size: 13px;
         line-height: 19px;
-
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: $main-back-color;
 
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
         text-decoration: none;
-
-        
     }
 }
 

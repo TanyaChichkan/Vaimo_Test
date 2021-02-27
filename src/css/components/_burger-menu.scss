@@ -10,7 +10,7 @@
     left: 0;
     
     text-align: center;
-    background-color: white;
+    background-color: $main-back-color;
     display: none;
     
     &-container{
@@ -22,20 +22,17 @@
         }
     }
   
-    
     &.is-menu-open {
         display: block;
         z-index: 99;
         min-height: 695px;
         
-
         .navigation{
             display: flex;
 
             &-list{
 
-                display:flex;
-                flex-direction:column;
+                @extend %flex-container-column;
                 align-items: flex-start;
 
                 @include desktop(){
@@ -45,7 +42,6 @@
                     margin: 0 auto;
                 }
             }
-
         }
     }
 
@@ -58,9 +54,7 @@
         background-color: transparent;
         position: static;
         padding: 0;
-
     }
-      
 }
 
 .icon-back{
@@ -75,7 +69,6 @@
             display: none;
         }
     }
-
    
 }
 
@@ -88,9 +81,6 @@
     text-align: initial;
    
     &.delivery-text{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
         font-size: 10px;
         line-height: 15px;
 
@@ -98,7 +88,6 @@
         margin-left: 7px;
     }
        
-
     &.is-rendered{
         display: flex;
         align-items: center;
@@ -133,22 +122,19 @@
     display: none;
 
     &.is-rendered{
-    display:block;
-    margin: 0 auto;
-    margin-top: 15px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 15px;
+        display:block;
+        margin: 0 auto;
+        margin-top: 15px;
+        font-size: 10px;
+        line-height: 15px;
 
-    text-align: center;
-    letter-spacing: 0.5px;
+        text-align: center;
+        letter-spacing: 0.5px;
 
-    color: #000000;
+        color: $primary-color;
 
-    @include desktop(){
-        display: none;
-    }
+        @include desktop(){
+            display: none;
+        }
     }
 }

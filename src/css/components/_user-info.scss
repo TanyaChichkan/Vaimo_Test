@@ -1,0 +1,151 @@
+@import '../utils/_mixines';
+
+.mobile-cart{
+    @extend %registr-cart;
+}
+
+.registr-button-wrapper ~ .icon-basket{
+    display: none;
+    width:16px;
+    height: 24px;
+
+    @include desktop(){
+        display: block;
+    }
+}
+
+.registr{
+    &-wrapper{
+        @extend %flex-container-row;
+
+        @include desktop(){
+            position: static;
+            width:148px;
+        }
+    }
+
+    &-button-wrapper{
+        display: none;
+
+        @include desktop(){
+            display: flex;
+        }
+
+        &.mobile{
+            display: flex;
+            background-color: $secondary-back-color-light;
+            padding-top:16px;
+            padding-bottom:15px;
+            padding-left: 15px;
+            margin-bottom:2px;
+
+            @include desktop(){
+                display: none;
+            }
+        }
+    }
+
+    &-button{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        background-color:transparent;
+        outline:none;
+        border:none;
+        
+        @include desktop(){
+        font-size: 11px;
+        line-height: 16px;
+        color: $main-back-color;
+        }
+
+        &:first-child{
+            margin-right:20px;
+            position: relative;
+         
+            &::after{
+                content: "";
+                width: 1px;
+                height: 16px;
+                position: absolute;
+                right: -11px;
+                background-color: $primary-color;
+
+                @include desktop(){
+                    background-color: $main-back-color;
+                }
+            }
+        }
+    }
+
+    &-cart{
+        display:none;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: $back-color-pink;
+        text-align: center;
+    }
+
+    &-user{
+        display:none;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        text-align: right;
+        letter-spacing: 1px;
+    }
+
+   &-cart-buttons{
+       display:none;
+
+       &.is-registered{
+           display: flex;
+           position: absolute;
+           width: 200px;
+           transform: translate(0, 35px);
+        }
+   }
+
+   &-cart-list{
+       @extend %flex-container-column;
+       margin-top: 23px;
+   }
+}
+
+.registr-wrapper.is-registered{
+    position:relative;
+   
+    .regist-btn-block{
+        display:none;
+    }
+ 
+    .registr-cart{
+        display: block;
+    }
+
+    .registr-user{
+        display:block;
+    }
+}
+
+.hidden{
+    &.registr-button::after{
+        display:none;
+    }
+}
+
+.mobile-cart{
+
+    display:none;
+
+    &.is-registered{
+        display: block;
+
+        @include desktop(){
+            display: none;
+        }
+    }
+}
