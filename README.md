@@ -69,7 +69,7 @@ Introduces general information, and **changes its theme from transparent backgro
 It's changed on the **desktop device**, if the user is logged in, and its max-width is fixed up to 500px of the mobile (to keep the picture, and not to widen it, as it looses its quality being stretched);
 
 ### Footer section
-Introduces regular information to the user, and it also ***shows category details*** to the user on the ***mobile device***. To see the details for each category, click on any part of the ***category item*** or (*>*).
+Introduces regular information to the user, and it also ***shows category details*** to the user on the ***mobile device***. To see the details for each category, click on any part of the ***category item*** or ">".
 
 
 

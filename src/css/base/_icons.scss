@@ -35,7 +35,7 @@
 
         &.mobile{
             position: absolute;
-            transform: translate(-28px,8px);
+            transform: translate(-28px, 13px);
             pointer-events: none;
         }
 
@@ -43,14 +43,15 @@
             position:absolute;
             top:0;
             right: 0;
-            transform: translate(-20px, 16px);
+            transform: translate(-20px, 17px);
+            --color1:black;
         }
     }
 
     &-cross{
         display: none;
         width:16px;
-        height: 16px;
+        height: 21px;
     }
 
     &-location{

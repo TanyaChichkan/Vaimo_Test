@@ -3,10 +3,12 @@
     width: 100%;
     background: $secondary-back-color-light;
     mix-blend-mode: normal;
-    opacity: 0.24;
     border-radius: 3px;
+    border: 1px solid $border-color;
+
     padding-top: 12px;
-    padding-left: 12px; 
+    padding-left: 12px;
+    padding-bottom: 11px;
 
     @include desktop(){
         width: 584px;
@@ -47,4 +49,8 @@
     
 .input-mobile.is-input-open{
     display:block;
+
+    @include desktop(){
+        display: none;
+    }
 }
