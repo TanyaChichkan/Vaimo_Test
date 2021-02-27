@@ -18,4 +18,5 @@ export const refs={
     iconGoBack:document.querySelector('.icon-back'),
     mobileDelivery: document.querySelector('.delivery-wrapper'),
     deliverySlogan:document.querySelector('.delivery-slogan'),
+    registerBtnMobile: document.querySelector('.registr-button-wrapper.mobile')
 }

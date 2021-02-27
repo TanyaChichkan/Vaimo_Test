@@ -589,6 +589,8 @@ header:hover .icon-burger, header.is-registered .icon-burger, header:active .ico
   background-image: url("./images/backgr-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -604,6 +606,8 @@ header:hover .icon-burger, header.is-registered .icon-burger, header:active .ico
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
+    max-width: initial;
   }
 }
 
@@ -1160,6 +1164,15 @@ footer .icon-right.is-open {
   text-transform: uppercase;
 }
 
+.mobile-cart {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #F2DA91;
+  text-align: center;
+}
+
 .menu-wrapper {
   width: 88%;
   padding: 0;
@@ -1353,6 +1366,15 @@ footer .icon-right.is-open {
   line-height: 19px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.mobile-cart {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #F2DA91;
+  text-align: center;
 }
 
 .backdrop.is-open {

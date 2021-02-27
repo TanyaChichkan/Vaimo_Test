@@ -14,9 +14,18 @@ function registrHandler(e){
         refs.registrBtnBlock.classList.toggle('is-registered');
         refs.deliveryWrapper.classList.toggle('is-registered');
         refs.cartButtons.classList.toggle('is-registered');
-
-        
-        // refs.cartMobile.classList.toggle('is-registered');
-        // console.log(true);
     }
+
+}
+
+refs.registerBtnMobile.addEventListener('click',registrHandlerMob);
+
+
+
+function registrHandlerMob(e){
+    console.log(e.target);
+    if(e.target.dataset.name==="register-mobile"){
+        refs.cartMobile.classList.toggle('is-registered');
+
+ }
 }
