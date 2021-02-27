@@ -1,10 +1,7 @@
 import {refs} from './refs';
 
 
-
-if(refs.container.style.width<1440){
-    refs.menuWrapper.addEventListener('click',navHandler);
-} 
+refs.menuWrapper.addEventListener('click',navHandler);
 
 const arr = ["clothing", "collections", "collabs", "brands" ];
 const navLinks = ["What's new", "women", "accessories", "kids", "beauty", "outlet", "stories" ];
@@ -39,13 +36,6 @@ function navHandler(e){
         refs.mobileDelivery.classList.toggle('is-rendered');
         
     }  
-
-    if(e.target.dataset.id==="go-back" && refs.navList.dataset.id==="third-page"){
-        refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;
-        refs.navList.dataset.id='second-page';
-        refs.navList.innerHTML=markUpRender(arr,2);
-        refs.iconGoBack.classList.toggle('is-rendered');
-    }
 
     if(e.target.dataset.id==="go-back" && refs.navList.dataset.id==="third-page"){
         refs.categoryBlock.children[1].textContent = e.target.firstElementChild.textContent;

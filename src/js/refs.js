@@ -3,7 +3,7 @@ export const refs={
     deliveryWrapper: document.querySelector('.header-delivery-wrapper'),
     headerInput: document.querySelector('.input-mobile'),
     togglerButtons: Array.from(document.querySelectorAll('.header-toggler-button')),
-    iconList: document.querySelector('.header-icon-list'),
+    
     cart: document.querySelector('.registr-cart'),
     cartMobile: document.querySelector('.mobile-cart'),
     container: document.querySelector('.container'),
@@ -18,5 +18,10 @@ export const refs={
     iconGoBack:document.querySelector('.icon-back'),
     mobileDelivery: document.querySelector('.delivery-wrapper'),
     deliverySlogan:document.querySelector('.delivery-slogan'),
-    registerBtnMobile: document.querySelector('.registr-button-wrapper.mobile')
+    registerBtnMobile: document.querySelector('.registr-button-wrapper.mobile'),
+
+    footerList: document.querySelector('.footer-list'),
+    footerItems: Array.from(document.querySelectorAll('.footer-list-item')),
+    footerIconRight: Array.from(document.querySelectorAll('footer .icon-right')),
+    categoriesList: Array.from(document.querySelectorAll('.categories-list'))
 }

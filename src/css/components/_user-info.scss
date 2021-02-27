@@ -22,6 +22,14 @@
             position: static;
             width:148px;
         }
+
+        &.is-registered{
+            display: none;
+
+            @include desktop(){
+                display: flex;
+            }
+        }
     }
 
     &-button-wrapper{
@@ -96,16 +104,24 @@
         line-height: 16px;
         text-align: right;
         letter-spacing: 1px;
+
+        
     }
 
    &-cart-buttons{
        display:none;
 
        &.is-registered{
-           display: flex;
-           position: absolute;
-           width: 200px;
-           transform: translate(0, 35px);
+            display: none;
+
+           @include desktop(){
+                display: flex;
+                position: absolute;
+                width: 200px;
+                transform: translate(0, 35px);
+           }
+
+           
         }
    }
 

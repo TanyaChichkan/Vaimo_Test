@@ -1,8 +1,6 @@
 import {refs} from './refs';
 
-document.body.addEventListener('click',cartHandler);
-
-function cartHandler(e){
+const cartHandler=(e)=>{
     if(e.target.classList.contains('registr-button')){
 
         let counter = Number(refs.cart.textContent);
@@ -17,5 +15,6 @@ function cartHandler(e){
 
         refs.cart.textContent = counter >=0 ? counter : 0;
     }
+};
 
-}
+document.body.addEventListener('click',cartHandler);

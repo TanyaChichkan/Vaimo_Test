@@ -21,7 +21,10 @@
 }
 
 .logo.burger-menu{
+    display: block;
+    color: black;
     @include desktop(){
         display: none;
     }
 }
+
