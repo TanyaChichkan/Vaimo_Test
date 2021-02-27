@@ -48,10 +48,10 @@ Introduces general information, and **changes its theme from transparent backgro
     + contains a burger-menu, opened by click on ***burger-icon***; when open, it changes the icon into a  close-icon. By pressing it  - the burger-menu will be closed; the menu is opened on the backdrop;
 
     + the burger-menu introduces:
-    - a list of **categories** and a ***registration block***; by click on ***Women***, another page with sub-categories is opened, choose ***Clothing*** to see all items available for clothing. To return back to the first page of the menu - press ***View all*** (available on each page) or <<> button (on the page with clothing items); 
+    1. a list of **categories** and a ***registration block***; by click on ***Women***, another page with sub-categories is opened, choose ***Clothing*** to see all items available for clothing. To return back to the first page of the menu - press ***View all*** (available on each page) or "<" button (on the page with clothing items); 
     ***Categories-->Women-->Clothing-->View all***. Now, only ***Women*** category is available, others can be added dynamically if needed. 
 
-    - a block with registration; when any of two buttons is clicked (***Registration/Sign In***), the user is authenticated, and a circle with number of chosen products in the cart appears in the header;
+    2. a block with registration; when any of two buttons is clicked (***Registration/Sign In***), the user is authenticated, and a circle with number of chosen products in the cart appears in the header;
     when it's pressed 2 times, it means the user logged out.
 
 2. Desktop device:
